@@ -61,3 +61,7 @@ class FileStorage:
         """Delete dictionary of object storage"""
         if obj:
             self.__objects.pop(obj.__class__.__name__ + "." + obj.id)
+
+    def close(self):
+        """calls reload method"""
+        self.reload()
