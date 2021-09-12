@@ -26,9 +26,10 @@ def c(text):
 
 @app.route('/python')
 @app.route('/python/<text>', strict_slashes=False)
-def python_is_etc(text="is cool"):
+def python(text="is cool"):
     """displays 'Python', followed by the value of the <text>"""
-    return ("Python {}".format(text.replace('_', ' ')))
+    text = text.replace("_", " ")
+    return ("Python {}".format(text))
 
 
 if __name__ == "__main__":
