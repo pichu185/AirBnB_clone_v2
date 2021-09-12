@@ -13,8 +13,8 @@ def home():
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
-	"""display “HBNB”"""
-	return ("HBNB")
+    """display “HBNB”"""
+    return ("HBNB")
 
 
 if __name__ == "__main__":
